@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% block title %}Home {% endblock title %}
+
+{% block body %}
+<div class="container-fluid  px-0 ">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <!-- <img src="/static/1.jfif" class="d-block w-100" alt="..."> -->
+            <img src="https://source.unsplash.com/1600x600/?fitness,gym" class="d-block w-100" alt="...">
+            
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rise and grind</h5>
+              <p>Glowing and growing!</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://source.unsplash.com/1600x600/?men,workout" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stronger every day, one rep at a time</h5>
+              <p>Don't decrease the goal. Increase the effort!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1600x600/?girl,workout" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stop waiting for Monday, Jan. 1, or anything else. Start now</h5>
+              <p>It hurts now, but one day, it will be your warm-up.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<div class="container my-3 px-0">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 ">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/1200x600/?men,gym" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/1200x600/?girl,workout" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/1200x600/?fitness" class="d-block w-100" alt="...">
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/1200x600/?workout" class="d-block w-100" alt="...">        
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/1200x600/?gym,people" class="d-block w-100" alt="...">        
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/1200x600/?women,workout" class="d-block w-100" alt="...">        
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+      <img src="https://source.unsplash.com/1200x600/?healthy,gymclub" class="d-block w-100" alt="...">        
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/1200x600/?food,gym" class="d-block w-100" alt="...">        
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+      <img src="https://source.unsplash.com/1200x600/?diet" class="d-block w-100" alt="...">        
+        <div class="card-body">
+          <p class="card-text">{{x}}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            </div>
+            <small class="text-body-secondary">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,78 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Contact Us
+{% endblock title %}
+
+{% block body %}
+<div class="container-fluid  px-0 mb-3">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <!-- <img src="/static/1.jfif" class="d-block w-100" alt="..."> -->
+            <img src="https://source.unsplash.com/1600x600/?contact" class="d-block w-100" alt="...">
+            
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rise and grind</h5>
+              <p>Glowing and growing!</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://source.unsplash.com/1600x600/?mobiles,fitness" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stronger every day, one rep at a time</h5>
+              <p>Don't decrease the goal. Increase the effort!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1600x600/?soial media" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Stop waiting for Monday, Jan. 1, or anything else. Start now</h5>
+              <p>It hurts now, but one day, it will be your warm-up.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+
+<div class="container">
+<h1 class="text-center">CONTACT US</h1>
+<form method="POST" action="/about">
+    {%csrf_token %} 
+    <div class="row mb-3">
+      <label for="name" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="email" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-5">
+            <input type="email" class="form-control" id="email"  name="email" placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your Phone number">
+      </div>
+    </div>
+    <div class="row mb-3">
+        <label for="desc" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-5">
+            <textarea class="form-control" id="desc"  name="desc" placeholder="Tell me about why you want to contact me for... "></textarea>
+        </div>
+      </div>
+    <button type="submit" class="btn btn-primary ">Submit</button>
+  </form>
+</div>
+{% endblock body %}
